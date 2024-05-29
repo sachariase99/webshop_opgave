@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const db = require('./models');
 const productRoutes = require('./routes/products');
+const cors = require('cors');
+
+app.use(cors());
 
 require('dotenv').config();
 
